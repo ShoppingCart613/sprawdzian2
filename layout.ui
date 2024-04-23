@@ -1,0 +1,268 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>Dialog</class>
+ <widget class="QDialog" name="Dialog">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>789</width>
+    <height>775</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Dialog</string>
+  </property>
+  <widget class="QLineEdit" name="posilek">
+   <property name="geometry">
+    <rect>
+     <x>130</x>
+     <y>30</y>
+     <width>261</width>
+     <height>31</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QSpinBox" name="kalorie">
+   <property name="geometry">
+    <rect>
+     <x>530</x>
+     <y>30</y>
+     <width>101</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="maximum">
+    <number>9999</number>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label">
+   <property name="geometry">
+    <rect>
+     <x>20</x>
+     <y>30</y>
+     <width>161</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>10</pointsize>
+    </font>
+   </property>
+   <property name="text">
+    <string>Nazwa posiłku</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_2">
+   <property name="geometry">
+    <rect>
+     <x>390</x>
+     <y>30</y>
+     <width>151</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>10</pointsize>
+    </font>
+   </property>
+   <property name="text">
+    <string>liczba kalorii (kcal)</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="dodaj">
+   <property name="geometry">
+    <rect>
+     <x>660</x>
+     <y>30</y>
+     <width>101</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <weight>75</weight>
+     <bold>true</bold>
+    </font>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background: lightyellow</string>
+   </property>
+   <property name="text">
+    <string>DODAJ</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="labelKcal">
+   <property name="geometry">
+    <rect>
+     <x>50</x>
+     <y>600</y>
+     <width>191</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>10</pointsize>
+    </font>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background: green;
+color: white </string>
+   </property>
+   <property name="text">
+    <string>liczba spożytych kalorii:</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="iloscKalorii">
+   <property name="geometry">
+    <rect>
+     <x>290</x>
+     <y>600</y>
+     <width>271</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>10</pointsize>
+    </font>
+   </property>
+   <property name="text">
+    <string>0</string>
+   </property>
+  </widget>
+  <widget class="QRadioButton" name="m">
+   <property name="geometry">
+    <rect>
+     <x>190</x>
+     <y>680</y>
+     <width>95</width>
+     <height>20</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>mężczyzna</string>
+   </property>
+   <property name="autoExclusive">
+    <bool>false</bool>
+   </property>
+  </widget>
+  <widget class="QRadioButton" name="k">
+   <property name="geometry">
+    <rect>
+     <x>50</x>
+     <y>680</y>
+     <width>95</width>
+     <height>20</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>kobieta</string>
+   </property>
+   <property name="checked">
+    <bool>true</bool>
+   </property>
+   <property name="autoExclusive">
+    <bool>false</bool>
+   </property>
+  </widget>
+  <widget class="QRadioButton" name="malaAkt">
+   <property name="geometry">
+    <rect>
+     <x>50</x>
+     <y>730</y>
+     <width>181</width>
+     <height>21</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>mała aktywność fizyczna</string>
+   </property>
+   <property name="checked">
+    <bool>true</bool>
+   </property>
+   <property name="autoExclusive">
+    <bool>false</bool>
+   </property>
+  </widget>
+  <widget class="QRadioButton" name="sredniaAkt">
+   <property name="geometry">
+    <rect>
+     <x>240</x>
+     <y>730</y>
+     <width>191</width>
+     <height>20</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>średnia aktywność fizyczna</string>
+   </property>
+   <property name="autoExclusive">
+    <bool>false</bool>
+   </property>
+  </widget>
+  <widget class="QRadioButton" name="duzaAkt">
+   <property name="geometry">
+    <rect>
+     <x>450</x>
+     <y>730</y>
+     <width>171</width>
+     <height>20</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>duża aktywność fizyczna</string>
+   </property>
+   <property name="autoExclusive">
+    <bool>false</bool>
+   </property>
+  </widget>
+  <widget class="Line" name="line">
+   <property name="geometry">
+    <rect>
+     <x>-20</x>
+     <y>640</y>
+     <width>861</width>
+     <height>21</height>
+    </rect>
+   </property>
+   <property name="orientation">
+    <enum>Qt::Horizontal</enum>
+   </property>
+  </widget>
+  <widget class="QLabel" name="image">
+   <property name="geometry">
+    <rect>
+     <x>140</x>
+     <y>290</y>
+     <width>471</width>
+     <height>271</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="QListWidget" name="lista">
+   <property name="geometry">
+    <rect>
+     <x>140</x>
+     <y>80</y>
+     <width>471</width>
+     <height>192</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background: transparent</string>
+   </property>
+   <property name="selectionRectVisible">
+    <bool>false</bool>
+   </property>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
