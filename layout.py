@@ -88,6 +88,7 @@ class Ui_Dialog(object):
         self.lista = QtWidgets.QListWidget(parent=Dialog)
         self.lista.setGeometry(QtCore.QRect(140, 80, 471, 192))
         self.lista.setStyleSheet("background: transparent")
+        self.lista.setSelectionMode(QtWidgets.QAbstractItemView.SelectionMode.NoSelection)
         self.lista.setSelectionRectVisible(False)
         self.lista.setObjectName("lista")
 
